@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "108116094000",
+    "project_id": "app-mendoeventos",
+    "storage_bucket": "app-mendoeventos.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108116094000:android:2e8d7b29cd159dd130d1f5",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOWUgCMsMmuVTJgxT2C4Uk5JB2ke-t1jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+name: Build APK
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0-0.2.pre'  # Usa tu versión exacta
+      - run: sudo apt-get update && sudo apt-get install -y libglu1-mesa  # Dependencia necesaria
+      - run: flutter pub get
+      - run: flutter build apk --release --no-sound-null-safety  # Si usas Dart sin null safety
+      - uses: actions/upload-artifact@v3
+        with:
+          name: release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk

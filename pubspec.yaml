@@ -1,0 +1,37 @@
+name: mendo_eventos
+description: Aplicación para gestión de eventos universitarios
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^2.18.0
+  firebase_storage: ^11.7.0
+  provider: ^6.1.1
+  table_calendar: ^3.0.9
+  flutter_lints: ^5.0.0
+  logger: ^2.0.2
+  flutter_riverpod: ^2.4.9
+  firebase_auth: ^4.11.1
+  cloud_firestore: ^4.9.1
+  image_picker: ^1.0.4
+  share_plus: ^7.0.0
+  intl: ^0.18.1
+  flutterfire_cli: ^1.2.0
+  cached_network_image: ^3.3.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/imagenes/
+    - assets/iconos/
